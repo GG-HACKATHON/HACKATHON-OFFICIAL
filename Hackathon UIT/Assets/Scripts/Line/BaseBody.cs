@@ -148,9 +148,9 @@ public class BaseBody : MonoBehaviour {
         if (curHealth <= 0)
         {
             //Quan test:
-            EffectManager.Instance.Spawn(TYPE_FX.Collision, this.transform.position);
+            //EffectManager.Instance.Spawn(TYPE_FX.Collision, this.transform.position);
 
-            Destroy(this.gameObject);
+            OnDie();
         }
         float ratio = curHealth / health;
 
@@ -173,7 +173,12 @@ public class BaseBody : MonoBehaviour {
     }
 
     public virtual void OnDie()
-    { }
+    {
+        if (leader)
+        {
+            linePlayer.OnDie();
+        }
+    }
 
     public virtual void OnAttack()
     { }

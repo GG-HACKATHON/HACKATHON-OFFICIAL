@@ -29,6 +29,7 @@ public class AIMovement : MonoBehaviour {
     {
         elapsedTimeChange = 0f;
         Move = GetAction(direction);
+        SetMoveAnimation(direction);
     }
 
 	protected virtual void FixedUpdate()

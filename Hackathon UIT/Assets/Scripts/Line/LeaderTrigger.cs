@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LeaderTrigger : MonoBehaviour {
 
-	protected virtual void OnTriggerEnter2D(Collider2D col)
+	void OnTriggerEnter2D(Collider2D col)
     {
         BaseBody leader = GetComponent<BaseBody>();
 
@@ -20,7 +20,8 @@ public class LeaderTrigger : MonoBehaviour {
   
         if (col.tag == "Enemy")
         {
-            
+            leader.OnHit(5);
+            //Destroy(col.gameObject);
         }
     }
 }
