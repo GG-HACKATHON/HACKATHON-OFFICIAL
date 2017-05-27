@@ -1,0 +1,1434 @@
+fileFormatVersion: 2
+guid: 1dde951e145e70c4a909f8810b1e0c0f
+timeCreated: 1495885811
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bulletsheet_0
+    21300002: bulletsheet_1
+    21300004: bulletsheet_2
+    21300006: bulletsheet_3
+    21300008: bulletsheet_4
+    21300010: bulletsheet_5
+    21300012: bulletsheet_6
+    21300014: bulletsheet_7
+    21300016: bulletsheet_8
+    21300018: bulletsheet_9
+    21300020: bulletsheet_10
+    21300022: bulletsheet_11
+    21300024: bulletsheet_12
+    21300026: bulletsheet_13
+    21300028: bulletsheet_14
+    21300030: bulletsheet_15
+    21300032: bulletsheet_16
+    21300034: bulletsheet_17
+    21300036: bulletsheet_18
+    21300038: bulletsheet_19
+    21300040: bulletsheet_20
+    21300042: bulletsheet_21
+    21300044: bulletsheet_22
+    21300046: bulletsheet_23
+    21300048: bulletsheet_24
+    21300050: bulletsheet_25
+    21300052: bulletsheet_26
+    21300054: bulletsheet_27
+    21300056: bulletsheet_28
+    21300058: bulletsheet_29
+    21300060: bulletsheet_30
+    21300062: bulletsheet_31
+    21300064: bulletsheet_32
+    21300066: bulletsheet_33
+    21300068: bulletsheet_34
+    21300070: bulletsheet_35
+    21300072: bulletsheet_36
+    21300074: bulletsheet_37
+    21300076: bulletsheet_38
+    21300078: bulletsheet_39
+    21300080: bulletsheet_40
+    21300082: bulletsheet_41
+    21300084: bulletsheet_42
+    21300086: bulletsheet_43
+    21300088: bulletsheet_44
+    21300090: bulletsheet_45
+    21300092: bulletsheet_46
+    21300094: bulletsheet_47
+    21300096: bulletsheet_48
+    21300098: bulletsheet_49
+    21300100: bulletsheet_50
+    21300102: bulletsheet_51
+    21300104: bulletsheet_52
+    21300106: bulletsheet_53
+    21300108: bulletsheet_54
+    21300110: bulletsheet_55
+    21300112: bulletsheet_56
+    21300114: bulletsheet_57
+    21300116: bulletsheet_58
+    21300118: bulletsheet_59
+    21300120: bulletsheet_60
+    21300122: bulletsheet_61
+    21300124: bulletsheet_62
+    21300126: bulletsheet_63
+    21300128: bulletsheet_64
+    21300130: bulletsheet_65
+    21300132: bulletsheet_66
+    21300134: bulletsheet_67
+    21300136: bulletsheet_68
+    21300138: bulletsheet_69
+    21300140: bulletsheet_70
+    21300142: bulletsheet_71
+    21300144: bulletsheet_72
+    21300146: bulletsheet_73
+    21300148: bulletsheet_74
+    21300150: bulletsheet_75
+    21300152: bulletsheet_76
+    21300154: bulletsheet_77
+    21300156: bulletsheet_78
+    21300158: bulletsheet_79
+    21300160: bulletsheet_80
+    21300162: bulletsheet_81
+    21300164: bulletsheet_82
+    21300166: bulletsheet_83
+    21300168: bulletsheet_84
+    21300170: bulletsheet_85
+    21300172: bulletsheet_86
+    21300174: bulletsheet_87
+    21300176: bulletsheet_88
+    21300178: bulletsheet_89
+    21300180: bulletsheet_90
+    21300182: bulletsheet_91
+    21300184: bulletsheet_92
+    21300186: bulletsheet_93
+    21300188: bulletsheet_94
+    21300190: bulletsheet_95
+    21300192: bulletsheet_96
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bulletsheet_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 942
+        width: 45
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 942
+        width: 49
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 944
+        width: 37
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_3
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 944
+        width: 37
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_4
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 948
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_5
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 948
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_6
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 954
+        width: 25
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_7
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 961
+        width: 46
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_8
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 959
+        width: 25
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_9
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 961
+        width: 46
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_10
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 957
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_11
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 965
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_12
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 957
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_13
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 965
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_14
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 955
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_15
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 956
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_16
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 955
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_17
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 956
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_18
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 867
+        width: 17
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_19
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 882
+        width: 47
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_20
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 867
+        width: 17
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 882
+        width: 47
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_22
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 876
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_23
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 875
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_24
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 879
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_25
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 875
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_26
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 879
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_27
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 873
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_28
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 876
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_29
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 873
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_30
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 876
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_31
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 879
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_32
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 870
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_33
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 866
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_34
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 866
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_35
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 785
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_36
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 786
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_37
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 793
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_38
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 795
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_39
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 795
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_40
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 795
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_41
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 794
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_42
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 789
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_43
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 801
+        width: 48
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_44
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 792
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_45
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 802
+        width: 48
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_46
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 769
+        width: 34
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_47
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 769
+        width: 37
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_48
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 699
+        width: 42
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_49
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 709
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_50
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 709
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_51
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 709
+        width: 51
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_52
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 702
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_53
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 702
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_54
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 702
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_55
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 702
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_56
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 691
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_57
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 692
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_58
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 692
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_59
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 692
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_60
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 669
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_61
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 663
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_62
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 667
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_63
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 664
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_64
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 670
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_65
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 667
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_66
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 654
+        width: 39
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_67
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 659
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_68
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 655
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_69
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 655
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_70
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 610
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_71
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 549
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_72
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 484
+        width: 20
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_73
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 476
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_74
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 476
+        width: 86
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_75
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 474
+        width: 128
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_76
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 473
+        width: 130
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_77
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 473
+        width: 130
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_78
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 480
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_79
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 409
+        width: 50
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_80
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 417
+        width: 20
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_81
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 409
+        width: 86
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_82
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 407
+        width: 129
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_83
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 406
+        width: 131
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_84
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 406
+        width: 129
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_85
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 274
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_86
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 241
+        width: 26
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_87
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 196
+        width: 27
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_88
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 190
+        width: 26
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_89
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 188
+        width: 26
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_90
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 295
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_91
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 239
+        width: 26
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_92
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 230
+        width: 28
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_93
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 228
+        width: 26
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_94
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 227
+        width: 27
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_95
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 251
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bulletsheet_96
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 241
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

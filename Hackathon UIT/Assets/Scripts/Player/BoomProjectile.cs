@@ -26,7 +26,6 @@ public class BoomProjectile : Projectile {
         }
     }
       
-
     void OnTriggerEnter2D(Collider2D target)
     {
         if (target.tag == "Enemy")
