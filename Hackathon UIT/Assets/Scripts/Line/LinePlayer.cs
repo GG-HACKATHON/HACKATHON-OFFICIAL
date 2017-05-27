@@ -16,7 +16,7 @@ public class PathRecorder
 }
 
 public class LinePlayer : MonoBehaviour {
-
+    public CameraController cameraController;
     [HideInInspector]
     public BaseBody head;
     public ComradeType leaderType;
@@ -30,29 +30,34 @@ public class LinePlayer : MonoBehaviour {
 
     protected virtual void Start()
     {
-        Init();
+        CreateLeader();
+        CreateFollower();
     }
-
-    public virtual void Init()
+    protected virtual void CreateLeader()
     {
         GameObject go = (GameObject)Instantiate(ComradeManager.Instance.GetObjectByType(leaderType), transform);
         head = go.GetComponent<BaseBody>();
 
-        if (head) {
+        if (head)
+        {
+            go.GetComponent<SpriteRenderer>().sortingLayerID = 100;
+            cameraController.player = head.gameObject;
             head.leader = true;
             head.recorder = new List<PathRecorder>();
             recorder = head.recorder;
             head.linePlayer = this;
         }
-      
-        bodies.Add(go);
 
+        bodies.Add(go);
+    }
+    protected virtual void CreateFollower() //ERR
+    {
         Vector3 pos = head.transform.position;
         pos.y += startDistance * follower.Count * distance;
 
         for (int i = 0; i <= follower.Count * distance; i++)
         {
-            recorder.Add(new PathRecorder(pos, head.dir));
+            //recorder.Add(new PathRecorder(pos, head.dir));
             pos.y -= startDistance;
         }
 
@@ -86,7 +91,6 @@ public class LinePlayer : MonoBehaviour {
                 AddBody(ComradeType.HIPPO, bodies.Count);
         }
     }
-
 
     public virtual void OnTurnLeft() 
     {
@@ -146,11 +150,11 @@ public class LinePlayer : MonoBehaviour {
         RemoveBody(index);
     }
 
-    public void Record()
+    public void Record() // ERR
     {
         if (head != null)
         {
-            recorder.Add(new PathRecorder(head.transform.position, head.dir));
+            //recorder.Add(new PathRecorder(head.transform.position, head.dir));
         }
     }
 }

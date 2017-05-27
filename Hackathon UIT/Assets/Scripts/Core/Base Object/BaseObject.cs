@@ -6,7 +6,6 @@ public class BaseObject : MonoBehaviour
 {
     public GameObject hp;
 
-    public Direction direction;
 
     public float health;
 
@@ -14,7 +13,7 @@ public class BaseObject : MonoBehaviour
 
     protected Animator anim;
 
-	public virtual void Init()
+    public virtual void Init()
     {
         curHealth = health;
         anim = GetComponent<Animator>();
@@ -36,5 +35,36 @@ public class BaseObject : MonoBehaviour
     public virtual void OnHit(BaseObject target, float dame)
     {
         target.health -= dame;
+    }
+
+    public virtual void SetMoveAnimation(Direction dir)
+    {
+        switch (dir)
+        {
+            case Direction.LEFT:
+                anim.SetBool("isLeft", true);
+                anim.SetBool("isRight", false);
+                anim.SetBool("isUp", false);
+                anim.SetBool("isDown", false);
+                break;
+            case Direction.RIGHT:
+                anim.SetBool("isLeft", false);
+                anim.SetBool("isRight", true);
+                anim.SetBool("isUp", false);
+                anim.SetBool("isDown", false);
+                break;
+            case Direction.UP:
+                anim.SetBool("isLeft", false);
+                anim.SetBool("isRight", false);
+                anim.SetBool("isUp", true);
+                anim.SetBool("isDown", false);
+                break;
+            case Direction.DOWN:
+                anim.SetBool("isLeft", false);
+                anim.SetBool("isRight", false);
+                anim.SetBool("isUp", false);
+                anim.SetBool("isDown", true);
+                break;
+        }
     }
 }

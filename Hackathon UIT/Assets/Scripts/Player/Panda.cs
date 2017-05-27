@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Panda : PlayerBaseObject
-{
-
+{ 
 	void Start () {
         Init();
 	}
@@ -23,6 +22,6 @@ public class Panda : PlayerBaseObject
         base.OnAttack();
     }
 
-   
+    
 }
 
