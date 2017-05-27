@@ -177,7 +177,7 @@ public class LinePlayer : MonoBehaviour {
     public virtual void OnDie()
     {
         RemoveBody(0);
-        //Application.LoadLevel("Main");
+        Application.LoadLevel("GameOver");
         Destroy(gameObject);
     }
 
