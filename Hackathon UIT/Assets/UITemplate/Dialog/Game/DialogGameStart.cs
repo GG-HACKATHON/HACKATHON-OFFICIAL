@@ -7,6 +7,7 @@ public class DialogGameStart : BaseDialog {
 	public void onClickPlayGame()
     {
         this.OnHide();
+        Application.LoadLevel("Main");
     }
     public void onClickSeting()
     {

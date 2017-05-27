@@ -6,7 +6,12 @@ using UnityEngine.UI;
 public class DialogGameOver : BaseDialog {
 
 	public void onClickReplay()
-    { }
+    {
+        this.OnHide();
+        Application.LoadLevel("Main");
+    }
     public void onClickHome()
-    { }
+    {
+        //Application.LoadLevel("Main");
+    }
 }

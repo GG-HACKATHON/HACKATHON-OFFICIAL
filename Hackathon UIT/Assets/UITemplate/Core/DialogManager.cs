@@ -5,7 +5,7 @@ using UnityEngine;
 //quan ly cac ui trong game
 public class DialogManager : MonoSingleton<DialogManager>
 {
-    
+
     void Start()
     {
         GetSceneCurrent();
@@ -191,4 +191,3 @@ public class DialogManager : MonoSingleton<DialogManager>
         ShowDialog<BaseDialog>("GUI/PopupDemo");
     }
 }
-
