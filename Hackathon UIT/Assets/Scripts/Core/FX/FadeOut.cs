@@ -6,6 +6,7 @@ public class FadeOut : BaseEffect
 {
     private Color fadeIndex;
     private SpriteRenderer rdr;
+    private Vector3 scale;
     protected override void Start()
     {
         //base.Start();
@@ -22,23 +23,33 @@ public class FadeOut : BaseEffect
             Destroy(this.gameObject);
             return;
         }
-        rdr = (SpriteRenderer)CopyComponent(rdr, this.gameObject);
+        //rdr = (SpriteRenderer)CopyComponent(rdr, this.gameObject);
+        
+
 
         //scaleOriginal = target.transform.localScale;
 
         fadeIndex = Color.white;
         fadeIndex.a = 1;
+
+        //set scale
+        scale = rdr.transform.localScale;
     }
     protected override void Update()
     {
         rdr.color = fadeIndex;
-        fadeIndex.a = (timer / timeLife);
+        fadeIndex.a = (timer /timeLife);
+
+        scale.x += 0.05f;
+        scale.y += 0.05f;
+        rdr.transform.localScale = scale;
         base.Update();
     }
 
     protected override void End()
     {
-        rdr.color = Color.white;
+        fadeIndex.a = 0;
+        rdr.enabled = false;
         base.End();
     }
 

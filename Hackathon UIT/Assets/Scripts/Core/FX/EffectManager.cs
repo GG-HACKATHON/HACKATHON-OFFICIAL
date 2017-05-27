@@ -14,7 +14,8 @@ public enum TYPE_FX
     Blink = 7,
     FadeIn = 8,
     ComboExplosionSmall = 9,
-    ComboExplosionLarge = 10
+    ComboExplosionLarge = 10,
+    FadeOut = 11
 }
 
 public class EffectManager : MonoSingleton<EffectManager>
@@ -64,6 +65,10 @@ public class EffectManager : MonoSingleton<EffectManager>
         else if (Input.GetKeyDown(KeyCode.F))
         {
             ApplyEffect(TYPE_FX.FadeIn, GameObject.Find("Panda"));
+        }
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            ApplyEffect(TYPE_FX.FadeOut, GameObject.Find("Panda"));
         }
     }
 #endif
