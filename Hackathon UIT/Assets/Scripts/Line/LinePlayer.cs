@@ -40,7 +40,6 @@ public class LinePlayer : MonoBehaviour {
 
         if (head)
         {
-            go.GetComponent<SpriteRenderer>().sortingLayerID = 100;
             cameraController.player = head.gameObject;
             head.leader = true;
             head.recorder = new List<PathRecorder>();
