@@ -119,7 +119,7 @@ public class LinePlayer : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.A))
         {
             if (distance * (bodies.Count) < recorder.Count)
-                AddBody(ComradeType.PANDA, bodies.Count);
+                AddBody(ComradeType.RED, bodies.Count);
         }
     }
 

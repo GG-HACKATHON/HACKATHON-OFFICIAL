@@ -61,7 +61,7 @@ public class EnemyController : MonoBehaviour {
             if (elapsedTimeSpawn >= timeSpawn)
             {
                 elapsedTimeSpawn = 0f;
-                CreateEnemy(EnemyType.PANDA, (Direction)Random.Range(1, 4));
+                CreateEnemy((EnemyType)Random.Range(0, enemies.Count), (Direction)Random.Range(1, 4));
             }
         }
     }
