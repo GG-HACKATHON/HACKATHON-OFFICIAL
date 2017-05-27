@@ -167,4 +167,9 @@ public class LinePlayer : MonoBehaviour {
     {
         //RemoveBody(index);
     }
+
+    public int GetBodyCount()
+    {
+        return bodies.Count;
+    }
 }

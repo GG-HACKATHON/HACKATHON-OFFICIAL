@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class ItemSpawn : BaseItem {
 
+    LinePlayer linePlayer;
+
+    void Awake()
+    {
+        linePlayer = FindObjectOfType<LinePlayer>();
+    }
+
 	// Use this for initialization
 	void Start () {
         Init(ItemType.Spawn);
@@ -13,9 +20,15 @@ public class ItemSpawn : BaseItem {
 	void Update () {
 		
 	}
+    
 
     public override void Init(ItemType type)
     {
         base.Init(type);
+    }
+
+    protected override void OnDie()
+    {
+        linePlayer.AddBody(ComradeType.PANDA, linePlayer.GetBodyCount());
     }
 }

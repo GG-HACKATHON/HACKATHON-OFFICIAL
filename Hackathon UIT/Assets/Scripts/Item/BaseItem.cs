@@ -18,10 +18,12 @@ public class BaseItem : MonoBehaviour
         this.type = type;
     }
 
-    void OnTriggerEnter2D(Collider2D target)
+    protected virtual void OnTriggerEnter2D(Collider2D target)
     {
         if(target.tag == "Player")
         {
+            Debug.Log("Contact!");
+
             OnDie();
             Destroy(gameObject);
         }
