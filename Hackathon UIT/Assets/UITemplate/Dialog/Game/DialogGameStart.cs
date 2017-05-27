@@ -10,6 +10,6 @@ public class DialogGameStart : BaseDialog {
     }
     public void onClickSeting()
     {
-        DialogManager.Instance.ShowDialog <DialogGameSeting>("Dialog/Portrait/GameSetting");
+        DialogManager.Instance.ShowDialog <DialogGameSetting>("Prefabs/UI/GameSetting");
     }
 }
