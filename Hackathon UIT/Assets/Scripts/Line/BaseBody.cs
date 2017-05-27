@@ -243,4 +243,27 @@ public class BaseBody : MonoBehaviour {
     {
         this.speed = speed;
     }
+
+    public void AddHP(float hp)
+    {
+        float temp = curHealth + health;
+        if (temp > health)
+        {
+            temp = health;
+        }
+
+        curHealth = temp;
+
+        ScaleHP();
+    }
+
+    public void ScaleHP()
+    {
+        float ratio = curHealth / health;
+
+        Vector3 scale = defaultScale;
+        scale.x *= ratio;
+
+        this.hp.transform.localScale = scale;
+    }
 }

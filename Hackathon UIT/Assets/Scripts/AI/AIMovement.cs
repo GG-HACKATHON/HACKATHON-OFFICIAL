@@ -20,6 +20,7 @@ public class AIMovement : MonoBehaviour {
     delegate void Action();
     Action Move;
 
+    public int mistake;
 
     /// <summary>
     /// ------------------------- FUNCTION
@@ -62,22 +63,30 @@ public class AIMovement : MonoBehaviour {
     protected virtual void MoveLeft()
     {
         direction = Direction.LEFT;
-        transform.position += Vector3.left * speed * Time.fixedDeltaTime;
+        Vector3 offset = Vector3.left * speed * Time.fixedDeltaTime;
+        transform.position += offset;
+        previousPosition -= offset * mistake;  
     }
     protected virtual void MoveRight()
     {
         direction = Direction.RIGHT;
-        transform.position += Vector3.right * speed * Time.fixedDeltaTime;
+        Vector3 offset = Vector3.right * speed * Time.fixedDeltaTime;
+        transform.position += offset;
+        previousPosition -= offset * mistake;
     }
     protected virtual void MoveUp()
     {
         direction = Direction.UP;
-        transform.position += Vector3.up * speed * Time.fixedDeltaTime;
+        Vector3 offset = Vector3.up * speed * Time.fixedDeltaTime;
+        transform.position += offset;
+        previousPosition -= offset * mistake;
     }
     protected virtual void MoveDown()
     {
         direction = Direction.DOWN;
-        transform.position += Vector3.down * speed * Time.fixedDeltaTime;
+        Vector3 offset = Vector3.down * speed * Time.fixedDeltaTime;
+        transform.position += offset;
+        previousPosition -= offset * mistake;
     }
     protected virtual void Stand()
     {

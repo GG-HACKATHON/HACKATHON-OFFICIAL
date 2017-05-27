@@ -20,7 +20,7 @@ public class LeaderTrigger : MonoBehaviour {
   
         if (col.tag == "Enemy")
         {
-            leader.OnHit(5);
+            //leader.OnHit(5);
             //Destroy(col.gameObject);
         }
     }

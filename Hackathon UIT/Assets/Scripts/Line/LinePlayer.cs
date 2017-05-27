@@ -105,7 +105,7 @@ public class LinePlayer : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.A))
         {
             if (distance * (bodies.Count) < recorder.Count)
-                AddBody(ComradeType.HIPPO, bodies.Count);
+                AddBody(ComradeType.PANDA, bodies.Count);
         }
     }
 
@@ -159,7 +159,7 @@ public class LinePlayer : MonoBehaviour {
     public virtual void OnDie()
     {
         RemoveBody(0);
-        Application.LoadLevel("Main");
+        //Application.LoadLevel("Main");
         Destroy(gameObject);
     }
 
@@ -171,5 +171,13 @@ public class LinePlayer : MonoBehaviour {
     public int GetBodyCount()
     {
         return bodies.Count;
+    }
+
+    public void AddHP(int hp)
+    {
+        foreach (GameObject b in bodies)
+        {
+            b.GetComponent<BaseBody>().AddHP(hp);
+        }
     }
 }
