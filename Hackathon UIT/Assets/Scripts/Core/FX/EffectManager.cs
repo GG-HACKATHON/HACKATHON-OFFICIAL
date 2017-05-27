@@ -15,7 +15,9 @@ public enum TYPE_FX
     FadeIn = 8,
     ComboExplosionSmall = 9,
     ComboExplosionLarge = 10,
-    FadeOut = 11
+    FadeOut = 11,
+    Shield = 12,
+    Slow = 13
 }
 
 public class EffectManager : MonoSingleton<EffectManager>
@@ -43,6 +45,15 @@ public class EffectManager : MonoSingleton<EffectManager>
         Debug.Log(temp);
         temp.GetComponent<BaseEffect>().Init(target);
        
+    }
+
+    public void ApplyEffect(TYPE_FX type, GameObject target, float _TimeLife)
+    {
+        temp = Instantiate(prefabs[(int)type]) as GameObject;
+
+        // !!! lưu ý không gọi cartoon FX
+        temp.GetComponent<BaseEffect>().Init(target);
+        temp.GetComponent<BaseEffect>().timeLife = _TimeLife;
     }
 
     public TYPE_FX typeTest;
