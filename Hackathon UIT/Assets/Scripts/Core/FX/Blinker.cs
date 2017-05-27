@@ -36,6 +36,12 @@ public class Blinker : BaseEffect
 
     protected override void Update()
     {
+        if(target == null)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+
         if(timer <= timeBlinkNext)
         {
             spriteTarget.enabled = !spriteTarget.enabled;
