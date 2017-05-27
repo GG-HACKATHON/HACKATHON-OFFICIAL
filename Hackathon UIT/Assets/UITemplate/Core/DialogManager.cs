@@ -29,7 +29,7 @@ public class DialogManager : MonoSingleton<DialogManager>
 
     public T ShowDialog<T>(string pathPrefabs, object data = null, Transform transf = null) where T : BaseDialog
     {
-        ShowOverlay(UIOverlay.TYPE.DIALOG);
+        //ShowOverlay(UIOverlay.TYPE.DIALOG);
         T target = (T)FindObjectOfType(typeof(T));
         if (target == null)
         {
