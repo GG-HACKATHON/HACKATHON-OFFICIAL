@@ -16,15 +16,18 @@ public class PathRecorder
 }
 
 public class LinePlayer : MonoBehaviour {
+
     public CameraController cameraController;
-    [HideInInspector]
-    public BaseBody head;
     public ComradeType leaderType;
     public List<ComradeType> follower;
-    [HideInInspector]
-    public List<PathRecorder> recorder;
+    public float speed;
     public int distance;
     public float startDistance;
+
+    [HideInInspector]
+    public BaseBody leader;
+    [HideInInspector]
+    public List<PathRecorder> recorder;
 
     protected List<GameObject> bodies = new List<GameObject>();
 
@@ -32,34 +35,51 @@ public class LinePlayer : MonoBehaviour {
     {
         CreateLeader();
         CreateFollower();
+        Debug.Log(bodies.Count);
     }
+
     protected virtual void CreateLeader()
     {
         GameObject go = (GameObject)Instantiate(ComradeManager.Instance.GetObjectByType(leaderType), transform);
-        head = go.GetComponent<BaseBody>();
+        leader = go.GetComponent<BaseBody>();
 
-        if (head)
+        if (leader != null) // Nếu BaseBody tồn tại
         {
-            cameraController.player = head.gameObject;
-            head.leader = true;
-            head.recorder = new List<PathRecorder>();
-            recorder = head.recorder;
-            head.linePlayer = this;
+            // Cho camera di theo leader
+            cameraController.player = leader.gameObject;
+
+            // Tạo recorder để lưu vị trí
+            recorder = new List<PathRecorder>();
+
+            // Gán recorder của linePlayer cho leader
+            leader.recorder = recorder;
+
+            // Cho thằng này làm leader
+            leader.leader = true;
+
+            // gán this vào linePlayer của leader dùng để check đụng hàng
+            leader.linePlayer = this;
+
+            leader.SetSpeed(speed);
         }
 
         bodies.Add(go);
+       
     }
+
     protected virtual void CreateFollower() //ERR
     {
-        Vector3 pos = head.transform.position;
+        Vector3 pos = leader.transform.position;
         pos.y += startDistance * follower.Count * distance;
 
+        // Khởi tạo vị trí ban đầu của recorder
         for (int i = 0; i <= follower.Count * distance; i++)
         {
-            //recorder.Add(new PathRecorder(pos, head.dir));
+            recorder.Add(new PathRecorder(pos, leader.dir));
             pos.y -= startDistance;
         }
 
+        // Thêm từng player vào
         for (int i = 0; i < follower.Count; i++)
         {
             AddBody(follower[i], bodies.Count);
@@ -93,26 +113,23 @@ public class LinePlayer : MonoBehaviour {
 
     public virtual void OnTurnLeft() 
     {
-        head.Turn(Direction.LEFT);
+        leader.Turn(Direction.LEFT);
     }
 
     public virtual void OnTurnRight()
     {
-        head.Turn(Direction.RIGHT);
+        leader.Turn(Direction.RIGHT);
     }
 
     public virtual void OnTurnUp()
     {
-        head.Turn(Direction.UP);
+        leader.Turn(Direction.UP);
     }
 
     public virtual void OnTurnDown()
     {
-        head.Turn(Direction.DOWN);
+        leader.Turn(Direction.DOWN);
     }
-
-    public virtual void CreatePlayer(List<int> bodys)
-    { }
 
     public virtual void AddBody(ComradeType type, int number)
     {
@@ -120,7 +137,7 @@ public class LinePlayer : MonoBehaviour {
         GameObject body = (GameObject)Instantiate(ComradeManager.Instance.GetObjectByType(type), pos, Quaternion.identity, transform);
         BaseBody baseBody = body.GetComponent<BaseBody>();
         try {
-            baseBody.recorder = bodies[0].GetComponent<BaseBody>().recorder;
+            baseBody.recorder = recorder; // Đã sửa ở đây
             baseBody.SetNumber(number, distance);
             baseBody.Turn(Direction.FOLLOW);
         }
@@ -146,14 +163,6 @@ public class LinePlayer : MonoBehaviour {
 
     public virtual void OnHitLine(int index)
     {
-        RemoveBody(index);
-    }
-
-    public void Record() // ERR
-    {
-        if (head != null)
-        {
-            //recorder.Add(new PathRecorder(head.transform.position, head.dir));
-        }
+        //RemoveBody(index);
     }
 }

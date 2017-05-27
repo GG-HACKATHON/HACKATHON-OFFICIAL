@@ -12,17 +12,15 @@ public enum Direction
 
 public class BaseBody : MonoBehaviour {
 
-    public float hp;        //Máu hiện tại của player
-    public float hpCurrent;
-    public float range;
-    public GameObject hpBar;
-    public LinePlayer line;
+    public Direction dir;
     public bool leader;
 
     protected Animator anim;
-
     private delegate void Action();
     private Action Move;
+    private int pos;
+    private float speed = 1f;
+
 
     [HideInInspector]
     public List<PathRecorder> recorder;
@@ -30,11 +28,9 @@ public class BaseBody : MonoBehaviour {
     public int number;
     [HideInInspector]
     public LinePlayer linePlayer;
-    private int pos;
-
+    
     private void Start()
     {
-        hpCurrent = hp;
         Init();
     }
 
@@ -42,16 +38,20 @@ public class BaseBody : MonoBehaviour {
     {
         if (leader)
         {
-            //recorder.Add(new PathRecorder(transform.position, dir));
+            recorder.Add(new PathRecorder(transform.position, dir));
         }
 
         Move();
+        SetAnimation(dir);
     }
 
     public virtual void Init()
     {
-        if (Move != Follow) 
+        if (Move != Follow)
+        {
             Move = TurnDown;
+        }
+            
 
         anim = GetComponent<Animator>();
         if (anim == null)
@@ -63,67 +63,67 @@ public class BaseBody : MonoBehaviour {
 
     public virtual void Turn(Direction direction)
     {
-        //switch (direction)
-        //{
-        //    case Direction.LEFT:
-        //        if (dir != Direction.RIGHT)
-        //        {
-        //            Move = TurnLeft;
-        //        }
-        //        break;
-        //    case Direction.RIGHT:
-        //        if (dir != Direction.LEFT)
-        //        {
-        //            Move = TurnRight;
-        //        }
-        //        break;
-        //    case Direction.UP:
-        //        if (dir != Direction.DOWN)
-        //        {
-        //            Move = TurnUp;
-        //        }
-        //        break;
-        //    case Direction.DOWN:
-        //        if (dir != Direction.UP)
-        //        {
-        //            Move = TurnDown;
-        //        }
-        //        break;
-        //    case Direction.FOLLOW:
-        //        Move = Follow;
-        //        break;
-        //}
+        switch (direction)
+        {
+            case Direction.LEFT:
+                if (dir != Direction.RIGHT)
+                {
+                    Move = TurnLeft;
+                }
+                break;
+            case Direction.RIGHT:
+                if (dir != Direction.LEFT)
+                {
+                    Move = TurnRight;
+                }
+                break;
+            case Direction.UP:
+                if (dir != Direction.DOWN)
+                {
+                    Move = TurnUp;
+                }
+                break;
+            case Direction.DOWN:
+                if (dir != Direction.UP)
+                {
+                    Move = TurnDown;
+                }
+                break;
+            case Direction.FOLLOW:
+                Move = Follow;
+                break;
+        }
     }
 
     public virtual void TurnLeft()
     {
-        //this.dir = Direction.LEFT;
-        //transform.position += Vector3.left * speed * Time.deltaTime;
+        this.dir = Direction.LEFT;
+        transform.position += Vector3.left * speed * Time.deltaTime;
     }
 
     public virtual void TurnRight()
     {
-        //this.dir = Direction.RIGHT;
-        //transform.position += Vector3.right * speed * Time.deltaTime;
+        this.dir = Direction.RIGHT;
+        transform.position += Vector3.right * speed * Time.deltaTime;
     }
 
     public virtual void TurnUp()
     {
-        //this.dir = Direction.UP;
-        //transform.position += Vector3.up * speed * Time.deltaTime;
+        this.dir = Direction.UP;
+        transform.position += Vector3.up * speed * Time.deltaTime;
     }
 
     public virtual void TurnDown()
     {
-        //this.dir = Direction.DOWN;
-        //transform.position += Vector3.down * speed * Time.deltaTime;
+        this.dir = Direction.DOWN;
+        transform.position += Vector3.down * speed * Time.deltaTime;
     }
 
     public virtual void Follow()
     {
-        //transform.position = this.recorder[pos].position;
-        //dir = this.recorder[pos].direction;
-        //number++;
+        transform.position = recorder[pos].position;
+        dir = recorder[pos].direction;
+        pos++;
     }
 
     public virtual void OnHit(float damge)
@@ -186,19 +186,6 @@ public class BaseBody : MonoBehaviour {
         
     }
 
-    public virtual void UpdateHp(float d)
-    {
-        hpCurrent -= d;
-        float scale = hpCurrent / hp;
-        if (hpCurrent <= 0)
-        {
-            EffectManager.Instance.Spawn(TYPE_FX.Collision, gameObject.transform.position);
-            Destroy(gameObject);
-        }
-        hpBar.transform.localScale = new Vector3(scale, 1, 1);
-
-    }
-
     protected virtual void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag == "Player")
@@ -207,4 +194,8 @@ public class BaseBody : MonoBehaviour {
         }
     }
 
+    public void SetSpeed(float speed)
+    {
+        this.speed = speed;
+    }
 }
