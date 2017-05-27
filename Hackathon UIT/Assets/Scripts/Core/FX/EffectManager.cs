@@ -26,6 +26,8 @@ public class EffectManager : MonoSingleton<EffectManager>
 
     private GameObject temp;
 
+    private AudioSource audio;
+
     public void Spawn(TYPE_FX type, Vector3 location)
     {
         temp = Instantiate(prefabs[(int)type]) as GameObject;
@@ -44,7 +46,7 @@ public class EffectManager : MonoSingleton<EffectManager>
         temp = Instantiate(prefabs[(int)type]) as GameObject;
         Debug.Log(temp);
         temp.GetComponent<BaseEffect>().Init(target);
-       
+
     }
 
     public void ApplyEffect(TYPE_FX type, GameObject target, float _TimeLife)
@@ -58,11 +60,37 @@ public class EffectManager : MonoSingleton<EffectManager>
 
     public TYPE_FX typeTest;
     public Vector3 locationTest;
-    
+
     public void SpawnTest()
     {
         Spawn(typeTest, locationTest);
     }
+
+    public void Mute()
+    {
+        for (int i=0;i<prefabs.Length;i++)
+        {
+            audio = prefabs[i].GetComponent<AudioSource>();
+            if (audio!=null)
+            {
+                audio.mute = true;
+            }
+        }
+
+    }
+
+    public void DeMute()
+    {
+        for (int i = 0; i < prefabs.Length; i++)
+        {
+            audio = prefabs[i].GetComponent<AudioSource>();
+            if (audio != null)
+            {
+                audio.mute = false;
+            }
+        }
+    }
+
 
 #if UNITY_EDITOR
     void Update()
