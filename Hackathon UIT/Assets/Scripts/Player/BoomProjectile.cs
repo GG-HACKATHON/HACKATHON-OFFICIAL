@@ -33,8 +33,8 @@ public class BoomProjectile : Projectile {
         {
             movable = false;
             anim.SetBool("isExploisive", true);
-            Vector3 scale = new Vector3(4f, 4f, 4f);
-            gameObject.transform.localScale = scale;
+            //Vector3 scale = new Vector3(4f, 4f, 4f);
+            //gameObject.transform.localScale = scale;
             target.GetComponent<EnemyTrigger>().OnHit(dame);
         }
     }
