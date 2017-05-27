@@ -29,13 +29,13 @@ public class BoomProjectile : Projectile {
 
     void OnTriggerEnter2D(Collider2D target)
     {
-        if (target.tag == "Enemy" || target.tag == "Player")
+        if (target.tag == "Enemy")
         {
             movable = false;
             anim.SetBool("isExploisive", true);
-            Vector3 scale = new Vector3(4.5f, 4.5f, 4.5f);
+            Vector3 scale = new Vector3(4f, 4f, 4f);
             gameObject.transform.localScale = scale;
-            target.GetComponent<BaseBody>().OnHit(dame);
+            target.GetComponent<EnemyTrigger>().OnHit(dame);
         }
     }
 }
