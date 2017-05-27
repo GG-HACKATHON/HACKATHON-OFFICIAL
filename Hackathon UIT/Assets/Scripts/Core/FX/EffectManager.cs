@@ -46,7 +46,7 @@ public class EffectManager : MonoSingleton<EffectManager>
         temp = Instantiate(prefabs[(int)type]) as GameObject;
         Debug.Log(temp);
         temp.GetComponent<BaseEffect>().Init(target);
-
+        
     }
 
     public void ApplyEffect(TYPE_FX type, GameObject target, float _TimeLife)

@@ -15,7 +15,7 @@ public class ItemShield : BaseItem
 
     protected override void OnDie()
     {
-        Debug.Log("Player bat tu");
+        EffectManager.Instance.ApplyEffect(TYPE_FX.Shield, target.gameObject);
         linePlayer.SetInvincible(Amount);
     }
 

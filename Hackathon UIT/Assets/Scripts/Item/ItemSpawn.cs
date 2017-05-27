@@ -41,7 +41,7 @@ public class ItemSpawn : BaseItem {
 
     protected override void OnDie()
     {
-        EffectManager.Instance.ApplyEffect(TYPE_FX.Shield, target.gameObject);
+        
         linePlayer.AddBody(typePlayer, linePlayer.GetBodyCount());
     }
 }

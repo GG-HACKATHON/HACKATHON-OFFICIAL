@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class Shield : BaseEffect
 {
-    protected override void Start()
+    public override void Init(GameObject _Target)
     {
-        base.Start();
-        
+        this.transform.parent = _Target.transform;
+        this.transform.localPosition = Vector3.zero;
     }
     protected override void Update()
     {
-        
         base.Update();
     }
 
