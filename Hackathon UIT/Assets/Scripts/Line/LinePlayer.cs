@@ -59,6 +59,7 @@ public class LinePlayer : MonoBehaviour {
 
             // gán this vào linePlayer của leader dùng để check đụng hàng
             leader.linePlayer = this;
+            leader.gameObject.AddComponent<LeaderTrigger>();
 
             leader.SetSpeed(speed);
         }
@@ -157,7 +158,10 @@ public class LinePlayer : MonoBehaviour {
     }
 
     public virtual void OnDie()
-    { }
+    {
+        RemoveBody(0);
+        Destroy(gameObject);
+    }
 
     public virtual void OnHitLine(int index)
     {
