@@ -34,7 +34,7 @@ public class Detection : MonoBehaviour {
                   transform.position,
                   Quaternion.identity);
 
-                projectile.GetComponent<Projectile>().targetPosition = target.transform.position;                     
+                proj.GetComponent<Projectile>().targetPosition = target.transform.position;                     
 
                 currentTime = delayTime;
             }
