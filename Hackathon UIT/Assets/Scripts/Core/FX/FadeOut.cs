@@ -9,10 +9,22 @@ public class FadeOut : BaseEffect
     private Vector3 scale;
     protected override void Start()
     {
-        //base.Start();
-        //rdr = target.GetComponent<SpriteRenderer>();
+        
+        
+        base.Start();
+
+
+        // ----------------------------------------------------------
+        rdr = target.GetComponent<SpriteRenderer>();
+        Sprite sprite = Sprite.Create(rdr.sprite.texture, rdr.sprite.rect, rdr.sprite.pivot);
+
+        rdr = this.GetComponent<SpriteRenderer>();
+        rdr.sprite = sprite;
+
         //fadeIndex = Color.white;
         //fadeIndex.a = rdr.color.a;
+
+        // -------------------------------------------------------------
 
         base.Start();
 

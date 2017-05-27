@@ -63,6 +63,7 @@ public class BaseBody : MonoBehaviour {
 
     public virtual void Init()
     {
+        defaultScale = hp.transform.localScale;
         Move = GetAction(dir);
         curHealth = health;
         if (Move != Follow)
@@ -142,19 +143,23 @@ public class BaseBody : MonoBehaviour {
         pos++;
     }
 
+    Vector3 defaultScale;
+
     public virtual void OnHit(float dame)
     {
         curHealth -= dame;
         if (curHealth <= 0)
         {
             //Quan test:
-            //EffectManager.Instance.Spawn(TYPE_FX.Collision, this.transform.position);
-
+            EffectManager.Instance.Spawn(TYPE_FX.Collision, this.transform.position);
+           
             OnDie();
         }
+
         float ratio = curHealth / health;
 
-        Vector3 scale = new Vector3(ratio, 1, 1);
+        Vector3 scale = defaultScale;
+        scale.x *= ratio;
 
         hp.transform.localScale = scale;
     }
