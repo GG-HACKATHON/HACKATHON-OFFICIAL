@@ -6,7 +6,6 @@ public class HealthBar : MonoBehaviour {
 
     public GameObject hp;
 
-	// Use this for initialization
 	void Start () {
 		
 	}

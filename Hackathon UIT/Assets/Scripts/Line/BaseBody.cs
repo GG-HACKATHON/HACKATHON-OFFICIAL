@@ -12,8 +12,6 @@ public enum Direction
 
 public class BaseBody : MonoBehaviour {
 
-
-
     public Direction dir;
     public bool leader;
     public GameObject hp;
@@ -35,7 +33,12 @@ public class BaseBody : MonoBehaviour {
     [HideInInspector]
     public LinePlayer linePlayer;
 
-    private void FixedUpdate()
+    protected void Start()
+    {
+        Init();
+    }
+
+    protected void FixedUpdate()
     {
         if (leader)
         {
@@ -46,21 +49,32 @@ public class BaseBody : MonoBehaviour {
         SetAnimation(dir);
     }
 
+    Action GetAction(Direction dir)
+    {
+        switch (dir)
+        {
+            case Direction.LEFT: return TurnLeft;
+            case Direction.RIGHT: return TurnRight;
+            case Direction.UP: return TurnUp;
+            case Direction.DOWN: return TurnDown;
+            default: return Follow;
+        }
+    }
+
     public virtual void Init()
     {
+        Move = GetAction(dir);
         curHealth = health;
         if (Move != Follow)
         {
             Move = TurnDown;
         }
-            
-
+         
         anim = GetComponent<Animator>();
         if (anim == null)
         {
             Debug.Break();
         }
-
     }
 
     public virtual void Turn(Direction direction)
