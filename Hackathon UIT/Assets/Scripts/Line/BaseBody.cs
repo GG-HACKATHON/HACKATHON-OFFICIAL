@@ -12,12 +12,15 @@ public enum Direction
 
 public class BaseBody : MonoBehaviour {
 
+
+
     public Direction dir;
     public bool leader;
     public GameObject hp;
     public float health;
 
-    protected float curHealth;
+    public float curHealth;
+
     protected Animator anim;
     private delegate void Action();
     private Action Move;
@@ -31,11 +34,6 @@ public class BaseBody : MonoBehaviour {
     public int number;
     [HideInInspector]
     public LinePlayer linePlayer;
-    
-    private void Start()
-    {
-        Init();
-    }
 
     private void FixedUpdate()
     {
@@ -50,6 +48,7 @@ public class BaseBody : MonoBehaviour {
 
     public virtual void Init()
     {
+        curHealth = health;
         if (Move != Follow)
         {
             Move = TurnDown;
@@ -144,7 +143,7 @@ public class BaseBody : MonoBehaviour {
         hp.transform.localScale = scale;
     }
 
-    public virtual void OnHit(BaseObject target, float dame)
+    public virtual void OnHit(BaseBody target, float dame)
     {
         target.health -= dame;
     }

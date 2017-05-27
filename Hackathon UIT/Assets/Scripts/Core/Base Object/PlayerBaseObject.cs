@@ -2,13 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerBaseObject : BaseObject {
+public class PlayerBaseObject : BaseBody {
 
-    protected float occurTime;
-
-    protected float delayTime;
-
-    public virtual void OnAttack()
-    {
-    }
 }
