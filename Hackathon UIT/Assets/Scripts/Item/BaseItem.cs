@@ -6,7 +6,8 @@ public enum ItemType
 {
     Spawn,
     Diamond,
-    Heart
+    Heart,
+    Shield
 }
 
 public class BaseItem : MonoBehaviour
