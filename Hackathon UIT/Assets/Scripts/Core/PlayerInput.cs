@@ -24,29 +24,32 @@ public class PlayerInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (player)
+        {
 #if UNITY_EDITOR
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            player.OnTurnUp();
-        }
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                player.OnTurnUp();
+            }
 
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            player.OnTurnDown();
-        }
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                player.OnTurnDown();
+            }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            player.OnTurnLeft();
-        }
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                player.OnTurnLeft();
+            }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            //PlayerController.Instance.mainPlayer.OnTurnRight();
-            player.OnTurnRight();
-        }
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                //PlayerController.Instance.mainPlayer.OnTurnRight();
+
+                player.OnTurnRight();
+            }
 #endif
-
+        }
 
         if (Input.touchCount > 0)
         {

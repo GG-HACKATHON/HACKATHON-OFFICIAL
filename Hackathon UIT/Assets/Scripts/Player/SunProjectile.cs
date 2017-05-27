@@ -8,7 +8,7 @@ public class SunProjectile : Projectile {
     {
         if (target.tag == "Enemy")
         {
-            target.GetComponent<BaseBody>().OnHit(dame);
+            target.gameObject.GetComponent<EnemyTrigger>().OnHit(dame);
             Destroy(gameObject);
         }
     }
