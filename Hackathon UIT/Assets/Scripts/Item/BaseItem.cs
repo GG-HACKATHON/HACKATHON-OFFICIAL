@@ -4,10 +4,12 @@ using UnityEngine;
 
 public enum ItemType
 {
-    Spawn
+    Spawn,
+    Diamond
 }
 
-public class BaseItem : MonoBehaviour {
+public class BaseItem : MonoBehaviour
+{
 
     protected ItemType type;
 
@@ -20,7 +22,13 @@ public class BaseItem : MonoBehaviour {
     {
         if(target.tag == "Player")
         {
+            OnDie();
             Destroy(gameObject);
         }
+    }
+
+    protected virtual void OnDie()
+    {
+
     }
 }
