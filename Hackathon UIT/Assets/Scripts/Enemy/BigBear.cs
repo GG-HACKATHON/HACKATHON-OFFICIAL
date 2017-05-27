@@ -35,10 +35,13 @@ public class BigBear : MonoBehaviour {
         else
         {
             currentTime -= Time.deltaTime;
+            if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !anim.IsInTransition(0))
+            {
+                attackPrefab.SetActive(false);
+            }
         }
 
-        //if(anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-            //attackPrefab.SetActive(false);
+       
 
     }
 
