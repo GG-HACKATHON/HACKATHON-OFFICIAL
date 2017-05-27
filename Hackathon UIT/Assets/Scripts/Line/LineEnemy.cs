@@ -86,11 +86,11 @@ public class LineEnemy : MonoBehaviour {
         {
             OnTurnRight();
         }
-        else if (Input.GetKeyDown(KeyCode.A))
-        {
-            if (distance * (bodies.Count) < recorder.Count)
-                AddBody(ComradeType.RED, bodies.Count);
-        }
+        //else if (Input.GetKeyDown(KeyCode.A))
+        //{
+        //    if (distance * (bodies.Count) < recorder.Count)
+        //        AddBody(ComradeType.PANDA, bodies.Count);
+        //}
     }
 
     public virtual void OnTurnLeft()
