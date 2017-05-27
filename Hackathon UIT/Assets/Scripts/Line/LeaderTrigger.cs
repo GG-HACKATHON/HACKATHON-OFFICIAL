@@ -20,6 +20,8 @@ public class LeaderTrigger : MonoBehaviour {
   
         if (col.tag == "Enemy")
         {
+            // cho effect đụng tường chết vô đây
+            //EffectManager.Instance.ApplyEffect(TYPE_FX.Explosion);
             leader.OnHit(5);
             Destroy(col.gameObject);
         }
