@@ -18,6 +18,7 @@ public class PlayerInput : MonoBehaviour
         player = GetComponent<LinePlayer>();
         if (player == null)
             Debug.LogError("Player Null Exception!");
+        Debug.Log(this);
     }
 
 

@@ -5,7 +5,8 @@ using UnityEngine;
 public enum ItemType
 {
     Spawn,
-    Diamond
+    Diamond,
+    Heart
 }
 
 public class BaseItem : MonoBehaviour
