@@ -13,6 +13,7 @@ public class LeaderTrigger : MonoBehaviour {
             // Nếu leader đụng vào tường thì chết
             if (leader)
             {
+                EffectManager.Instance.Spawn(TYPE_FX.Collision, transform.position);
                 leader.linePlayer.OnDie();
             }
         }

@@ -15,6 +15,7 @@ public class ItemHealth : BaseItem
 
     protected override void OnDie()
     {
+        EffectManager.Instance.Spawn(TYPE_FX.HitGreen, this.transform.position);
         linePlayer.AddHP(Amount);
     }
 

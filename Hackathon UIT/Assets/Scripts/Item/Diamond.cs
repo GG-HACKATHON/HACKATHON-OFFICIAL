@@ -12,6 +12,7 @@ public class Diamond : BaseItem
 
     protected override void OnDie()
     {
+        EffectManager.Instance.Spawn(TYPE_FX.HitBlue, this.transform.position);
         GameController.Instance.AddDiamond(Amount);
     }
 

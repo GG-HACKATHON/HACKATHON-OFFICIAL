@@ -41,7 +41,7 @@ public class ItemSpawn : BaseItem {
 
     protected override void OnDie()
     {
-        
+        EffectManager.Instance.Spawn(TYPE_FX.Collision, this.transform.position);
         linePlayer.AddBody(typePlayer, linePlayer.GetBodyCount());
     }
 }
