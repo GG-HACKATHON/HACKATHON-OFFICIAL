@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum EnemyType {
-    PANDA, BEAR
+    HOOLITOR, FUNNYBOY, BOSS
 }
 
 

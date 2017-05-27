@@ -1,0 +1,1322 @@
+fileFormatVersion: 2
+guid: 8ce576c3fedcd954bb14125a4231e3c7
+timeCreated: 1495916392
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: FunnyBoy_0
+    21300002: FunnyBoy_1
+    21300004: FunnyBoy_2
+    21300006: FunnyBoy_3
+    21300008: FunnyBoy_4
+    21300010: FunnyBoy_5
+    21300012: FunnyBoy_6
+    21300014: FunnyBoy_7
+    21300016: FunnyBoy_8
+    21300018: FunnyBoy_9
+    21300020: FunnyBoy_10
+    21300022: FunnyBoy_11
+    21300024: FunnyBoy_12
+    21300026: FunnyBoy_13
+    21300028: FunnyBoy_14
+    21300030: FunnyBoy_15
+    21300032: FunnyBoy_16
+    21300034: FunnyBoy_17
+    21300036: FunnyBoy_18
+    21300038: FunnyBoy_19
+    21300040: FunnyBoy_20
+    21300042: FunnyBoy_21
+    21300044: FunnyBoy_22
+    21300046: FunnyBoy_23
+    21300048: FunnyBoy_24
+    21300050: FunnyBoy_25
+    21300052: FunnyBoy_26
+    21300054: FunnyBoy_27
+    21300056: FunnyBoy_28
+    21300058: FunnyBoy_29
+    21300060: FunnyBoy_30
+    21300062: FunnyBoy_31
+    21300064: FunnyBoy_32
+    21300066: FunnyBoy_33
+    21300068: FunnyBoy_34
+    21300070: FunnyBoy_35
+    21300072: FunnyBoy_36
+    21300074: FunnyBoy_37
+    21300076: FunnyBoy_38
+    21300078: FunnyBoy_39
+    21300080: FunnyBoy_40
+    21300082: FunnyBoy_41
+    21300084: FunnyBoy_42
+    21300086: FunnyBoy_43
+    21300088: FunnyBoy_44
+    21300090: FunnyBoy_45
+    21300092: FunnyBoy_46
+    21300094: FunnyBoy_47
+    21300096: FunnyBoy_48
+    21300098: FunnyBoy_49
+    21300100: FunnyBoy_50
+    21300102: FunnyBoy_51
+    21300104: FunnyBoy_52
+    21300106: FunnyBoy_53
+    21300108: FunnyBoy_54
+    21300110: FunnyBoy_55
+    21300112: FunnyBoy_56
+    21300114: FunnyBoy_57
+    21300116: FunnyBoy_58
+    21300118: FunnyBoy_59
+    21300120: FunnyBoy_60
+    21300122: FunnyBoy_61
+    21300124: FunnyBoy_62
+    21300126: FunnyBoy_63
+    21300128: FunnyBoy_64
+    21300130: FunnyBoy_65
+    21300132: FunnyBoy_66
+    21300134: FunnyBoy_67
+    21300136: FunnyBoy_68
+    21300138: FunnyBoy_69
+    21300140: FunnyBoy_70
+    21300142: FunnyBoy_71
+    21300144: FunnyBoy_72
+    21300146: FunnyBoy_73
+    21300148: FunnyBoy_74
+    21300150: FunnyBoy_75
+    21300152: FunnyBoy_76
+    21300154: FunnyBoy_77
+    21300156: FunnyBoy_78
+    21300158: FunnyBoy_79
+    21300160: FunnyBoy_80
+    21300162: FunnyBoy_81
+    21300164: FunnyBoy_82
+    21300166: FunnyBoy_83
+    21300168: FunnyBoy_84
+    21300170: FunnyBoy_85
+    21300172: FunnyBoy_86
+    21300174: FunnyBoy_87
+    21300176: FunnyBoy_88
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 45
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FunnyBoy_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 273
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 273
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 273
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_3
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 273
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 273
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_5
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 273
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_6
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 273
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_7
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 273
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_8
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 273
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_9
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 273
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_10
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 273
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_11
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 273
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 234
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_13
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 234
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_14
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 234
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_15
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 234
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_16
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 234
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_17
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 234
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_18
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 234
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_19
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 234
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_20
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 234
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_21
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 234
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_22
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 234
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_23
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 234
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_24
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 195
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_25
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 156
+        width: 31
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_26
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 195
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_27
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 195
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_28
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 194
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_29
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 195
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_30
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 195
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_31
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 156
+        width: 31
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_32
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 195
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_33
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 195
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_34
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 156
+        width: 31
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_35
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 195
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_36
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 156
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_37
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 156
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_38
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 156
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_39
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 156
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_40
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 156
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_41
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 156
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_42
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 156
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_43
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 156
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_44
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 117
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_45
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 117
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_46
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 117
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_47
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 117
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_48
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 117
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_49
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 117
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_50
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 117
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_51
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 117
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_52
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 117
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_53
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 117
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_54
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 117
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_55
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 117
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_56
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 78
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_57
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 78
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_58
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 78
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_59
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 78
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_60
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 78
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_61
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 78
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_62
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 78
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_63
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 78
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_64
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 78
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_65
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 78
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_66
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 78
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_67
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 78
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_68
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 39
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_69
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 0
+        width: 31
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_70
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 39
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_71
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 39
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_72
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 31
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_73
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 39
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_74
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 39
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_75
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 0
+        width: 31
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_76
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 39
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_77
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 39
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_78
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 0
+        width: 31
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_79
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 39
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_80
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_81
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 0
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_82
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_83
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 0
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_84
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 0
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_85
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 0
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_86
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 0
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_87
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FunnyBoy_88
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 156
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
