@@ -133,7 +133,9 @@ public class BaseBody : MonoBehaviour {
         curHealth -= dame;
         if (curHealth <= 0)
         {
-            //EffectManager.Instance.ApplyEffect(TYPE_FX.Collision, this.gameObject);
+            //Quan test:
+            EffectManager.Instance.ApplyEffect(TYPE_FX.Collision, this.gameObject);
+
             Destroy(this.gameObject);
         }
         float ratio = curHealth / health;
