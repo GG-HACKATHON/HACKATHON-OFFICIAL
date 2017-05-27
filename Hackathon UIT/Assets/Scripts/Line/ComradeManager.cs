@@ -4,9 +4,9 @@ using UnityEngine;
 
 public enum ComradeType
 {
-    RED = 0,
-    BLUE = 1,
-    ROCKMAN = 2,
+    LEADER = 0,
+    RED = 1,
+    BLUE = 2
 }
 public class ComradeManager : MonoSingleton<ComradeManager> {
 
