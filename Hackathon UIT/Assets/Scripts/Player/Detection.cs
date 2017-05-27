@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Detection : MonoBehaviour {
 
-    public GameObject projectilePrefab;
+    public Projectile projectile;
 
     public float delayTime;
+
+    public float speed;
 
     private float currentTime;
     // Use this for initialization
@@ -28,9 +30,12 @@ public class Detection : MonoBehaviour {
         {
             if (currentTime <= 0.0f)
             {
-                GameObject proj = GameObject.Instantiate(projectilePrefab,
+                GameObject proj = Instantiate(projectile.gameObject,
                   transform.position,
                   Quaternion.identity);
+
+                projectile.GetComponent<Projectile>().targetPosition = target.transform.position;                     
+
                 currentTime = delayTime;
             }
         }
