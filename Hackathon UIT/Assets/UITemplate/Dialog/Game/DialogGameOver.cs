@@ -5,10 +5,17 @@ using UnityEngine.UI;
 
 public class DialogGameOver : BaseDialog {
 
-	public void onClickReplay()
+    public string score;
+    public Text scoreResult;
+
+    public void Start()
+    {
+        scoreResult.text = score;
+    }
+    public void onClickReplay()
     {
         this.OnHide();
-        Application.LoadLevel("Main");
+        //Application.LoadLevel("Main");
     }
     public void onClickHome()
     {

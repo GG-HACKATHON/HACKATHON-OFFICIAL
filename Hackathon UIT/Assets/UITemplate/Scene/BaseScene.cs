@@ -21,4 +21,9 @@ public class BaseScene : MonoBehaviour
     public virtual void Init()
     { }
 
+    public void OnclickPause()
+    {
+        DialogManager.Instance.ShowDialog<DialogGamePause>("Prefabs/UI/GamePause");
+    }
+
 }
