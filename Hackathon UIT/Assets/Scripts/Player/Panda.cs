@@ -22,5 +22,7 @@ public class Panda : PlayerBaseObject
     {
         base.OnAttack();
     }
+
+   
 }
 

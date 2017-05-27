@@ -20,4 +20,10 @@ public class BaseObject : MonoBehaviour {
         if (health <= 0)
             Destroy(this.gameObject);
     }
+
+    public virtual void OnHit(BaseObject target, float dame)
+    {
+        target.health -= dame;
+        Destroy(gameObject);
+    }
 }
