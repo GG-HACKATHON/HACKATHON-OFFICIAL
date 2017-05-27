@@ -8,8 +8,8 @@ public class SunProjectile : Projectile {
     {
         if (target.tag == "Enemy")
         {
-            Destroy(gameObject);
             target.GetComponent<BaseBody>().OnHit(dame);
+            Destroy(gameObject);
         }
     }
 
