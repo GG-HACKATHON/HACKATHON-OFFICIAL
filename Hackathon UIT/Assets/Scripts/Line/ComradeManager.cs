@@ -6,7 +6,9 @@ public enum ComradeType
 {
     LEADER = 0,
     RED = 1,
-    BLUE = 2
+    BLUE = 2,
+    WHITE = 3,
+    BLACK = 4
 }
 public class ComradeManager : MonoSingleton<ComradeManager> {
 
