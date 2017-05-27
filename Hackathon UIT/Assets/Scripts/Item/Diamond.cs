@@ -5,13 +5,14 @@ using UnityEngine;
 public class Diamond : BaseItem
 {
 
+    public int Amount;
+
 	// Use this for initialization
 	void Start ()
     {
 		
 	}
-	
-	// Update is called once per frame
+
 	void Update ()
     {
 		
@@ -20,7 +21,7 @@ public class Diamond : BaseItem
 
     protected override void OnDie()
     {
-       
+        GameController.Instance.AddDiamond(Amount);
     }
 
     

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameController : MonoBehaviour
+public class GameController : MonoSingleton<GameController>
 {
 
     public int gold;
@@ -16,7 +16,7 @@ public class GameController : MonoBehaviour
 
     public void AddDiamond(int num)
     {
-        gold += num;
+        diamond += num;
         Debug.Log("Diamond: " + diamond);
     }
 
