@@ -35,7 +35,6 @@ public class LinePlayer : MonoBehaviour {
     {
         CreateLeader();
         CreateFollower();
-        Debug.Log(bodies.Count);
     }
 
     protected virtual void CreateLeader()
@@ -160,6 +159,7 @@ public class LinePlayer : MonoBehaviour {
     public virtual void OnDie()
     {
         RemoveBody(0);
+        Application.LoadLevel("Nam");
         Destroy(gameObject);
     }
 
