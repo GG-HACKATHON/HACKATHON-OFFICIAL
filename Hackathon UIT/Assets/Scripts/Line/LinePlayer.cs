@@ -148,20 +148,25 @@ public class LinePlayer : MonoBehaviour {
 
     public virtual void AddBody(ComradeType type, int number)
     {
-        Vector3 pos = new Vector3(100, 100);
-        GameObject body = (GameObject)Instantiate(ComradeManager.Instance.GetObjectByType(type), pos, Quaternion.identity, transform);
-        BaseBody baseBody = body.GetComponent<BaseBody>();
-        try {
-            baseBody.linePlayer = this;
-            baseBody.recorder = recorder; // Đã sửa ở đây
-            baseBody.SetNumber(number, distance);
-            baseBody.Turn(Direction.FOLLOW);
-        }
-        catch (Exception e)
+        if (bodies.Count < 7)
         {
-            Debug.Log("Error Create");
+            Vector3 pos = new Vector3(100, 100);
+            GameObject body = (GameObject)Instantiate(ComradeManager.Instance.GetObjectByType(type), pos, Quaternion.identity, transform);
+            BaseBody baseBody = body.GetComponent<BaseBody>();
+            try
+            {
+                baseBody.linePlayer = this;
+                baseBody.recorder = recorder; // Đã sửa ở đây
+                baseBody.SetNumber(number, distance);
+                baseBody.Turn(Direction.FOLLOW);
+            }
+            catch (Exception e)
+            {
+                Debug.Log("Error Create");
+            }
+            bodies.Add(body);
         }
-        bodies.Add(body);
+       
     }
 
     public virtual void RemoveBody(int index)
