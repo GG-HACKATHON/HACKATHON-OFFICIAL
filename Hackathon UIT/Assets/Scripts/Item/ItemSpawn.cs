@@ -5,13 +5,21 @@ using System;
 
 public class ItemSpawn : BaseItem {
 
-
+    public ComradeType typePlayer;
+    public Sprite[] sprites;
 
     LinePlayer linePlayer;
 
     void Awake()
-    {      
-           
+    {
+
+
+        //typePlayer = (ComradeType)UnityEngine.Random.Range(0, Enum.GetNames(typeof(ComradeType)).Length);
+        typePlayer = (ComradeType)(UnityEngine.Random.Range(0, 2));
+
+
+        GetComponent<SpriteRenderer>().sprite = sprites[(int)typePlayer];
+
         linePlayer = FindObjectOfType<LinePlayer>();
     }
 
@@ -33,7 +41,6 @@ public class ItemSpawn : BaseItem {
 
     protected override void OnDie()
     {
-        linePlayer.AddBody((ComradeType)UnityEngine.Random.Range(0, Enum.GetNames(typeof(ComradeType)).Length)
-            , linePlayer.GetBodyCount());
+        linePlayer.AddBody(typePlayer, linePlayer.GetBodyCount());
     }
 }
