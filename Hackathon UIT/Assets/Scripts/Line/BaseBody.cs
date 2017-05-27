@@ -148,7 +148,7 @@ public class BaseBody : MonoBehaviour {
         if (curHealth <= 0)
         {
             //Quan test:
-            EffectManager.Instance.ApplyEffect(TYPE_FX.Collision, this.gameObject);
+            EffectManager.Instance.Spawn(TYPE_FX.Collision, this.transform.position);
 
             Destroy(this.gameObject);
         }

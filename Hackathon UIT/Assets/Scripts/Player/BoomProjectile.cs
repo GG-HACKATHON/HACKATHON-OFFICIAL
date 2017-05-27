@@ -25,12 +25,11 @@ public class BoomProjectile : Projectile {
             Destroy(gameObject);
         }
     }
-
-    
+      
 
     void OnTriggerEnter2D(Collider2D target)
     {
-        if (target.tag == "Enemy")
+        if (target.tag == "Enemy" || target.tag == "Player")
         {
             movable = false;
             anim.SetBool("isExploisive", true);
