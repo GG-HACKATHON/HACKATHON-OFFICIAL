@@ -14,10 +14,10 @@ public class DialogGameStart : BaseDialog {
     {
         music = this.GetComponentInParent<AudioSource>();
         music.mute = true;
-        this.OnHide();
-        GameController.Instance.StartGame();
+        //this.OnHide();
+        //GameController.Instance.StartGame();
 
-        //Application.LoadLevel("Main");
+        Application.LoadLevel("Main");
     }
     public void onClickSeting()
     {

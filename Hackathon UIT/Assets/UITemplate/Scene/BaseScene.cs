@@ -10,7 +10,7 @@ public class BaseScene : MonoBehaviour
 
     public void Start()
     {
-        DialogManager.Instance.ShowDialog<DialogGameStart>("Prefabs/UI/GameStart");
+        //DialogManager.Instance.ShowDialog<DialogGameStart>("Prefabs/UI/GameStart");
     }
     public virtual void OnShow(object data)
     {
