@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum EnemyType {
-    PANDA
+    PANDA, BEAR
 }
 
 
@@ -51,6 +51,7 @@ public class EnemyController : MonoBehaviour {
     private float elapsedTimeSpawn;
     public int maxEnemy;
     public GameObject hindrance;
+    public CameraController cameraController;
 
     protected void FixedUpdate()
     {
@@ -76,7 +77,7 @@ public class EnemyController : MonoBehaviour {
             Vector3 pos = new Vector3(Random.Range(-6f, 6f), Random.Range(-6f, 6f));
             prefab.transform.position = pos;
 
-            if (CheckIntersect(prefab.GetComponent<SpriteRenderer>().bounds))
+            if (CheckIntersect(prefab.GetComponent<SpriteRenderer>().bounds) && !cameraController.CheckInCamera(pos))
             {
                 GameObject enemy = (GameObject)Instantiate(GetEnemyByType(type), pos, Quaternion.identity, transform);
                 AIMovement component = enemy.GetComponent<AIMovement>();
@@ -93,7 +94,8 @@ public class EnemyController : MonoBehaviour {
     {
         foreach (Transform child in hindrance.transform)
         {
-            if (child.GetComponent<SpriteRenderer>().bounds.Intersects(bounds))
+            SpriteRenderer sprite = child.GetComponent<SpriteRenderer>();
+            if (sprite.bounds.Intersects(bounds))
                 return false;
         }
         return true;
