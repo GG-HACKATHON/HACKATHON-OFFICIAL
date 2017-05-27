@@ -21,9 +21,12 @@ public class PandaEnemy : MonoBehaviour {
         {
             currentTime = timeToSpawnToxic;
             projectilePrefab.direction = gameObject.GetComponent<AIMovement>().direction;
-            GameObject proj = Instantiate(projectilePrefab.gameObject,
-                gameObject.transform.position,
-                Quaternion.identity);
+            if (CameraController.Instance.CheckInCamera(this.gameObject.transform.position))
+            {
+                GameObject proj = Instantiate(projectilePrefab.gameObject,
+                  gameObject.transform.position,
+                  Quaternion.identity);
+            }
         }
         else
             currentTime -= Time.deltaTime;

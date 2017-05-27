@@ -11,14 +11,16 @@ public class PlayerInput : MonoBehaviour
     private bool isSwipe = false;
     private float minSwipeDist = 50.0f;
     private float maxSwipeTime = 0.5f;
-    private LinePlayer player;
+    
+    public LinePlayer player;
 
     void Start()
     {
-        player = GetComponent<LinePlayer>();
-        if (player == null)
-            Debug.LogError("Player Null Exception!");
-        Debug.Log(this);
+        //player = GetComponent<LinePlayer>();
+        Debug.Log(player);
+        //if (player == null)
+        //    Debug.LogError("Player Null Exception!");
+        //Debug.Log(this);
     }
 
 

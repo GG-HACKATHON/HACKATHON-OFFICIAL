@@ -30,7 +30,8 @@ public class BigBear : MonoBehaviour {
         if(currentTime<=0)
         {
             currentTime = timeToAttack;
-            attackPrefab.SetActive(true);
+            if (CameraController.Instance.CheckInCamera(gameObject.transform.position))
+                attackPrefab.SetActive(true);
         }
         else
         {

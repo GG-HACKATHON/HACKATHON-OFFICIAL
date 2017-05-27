@@ -29,7 +29,8 @@ public class ToxicProjectile : MonoBehaviour {
         timeToExploise -= Time.deltaTime;
         if(timeToExploise <=0)
         {
-            anim.SetBool("isExploise", true);
+            if (CameraController.Instance.CheckInCamera(gameObject.transform.position))
+                anim.SetBool("isExploise", true);
             rotate = Quaternion.Euler(0, 0, 0);
             speed = 0;
             isNormalStatus = false;
