@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInput : MonoBehaviour
-{
+public class TestMove : MonoBehaviour {
 
     private float fingerStartTime = 0.0f;
     private Vector2 fingerStartPos = Vector2.zero;
@@ -11,13 +10,12 @@ public class PlayerInput : MonoBehaviour
     private bool isSwipe = false;
     private float minSwipeDist = 50.0f;
     private float maxSwipeTime = 0.5f;
-    private LinePlayer player;
+    public float speed = 2;
+    public Vector3 direction;
 
     void Start()
     {
-        player = GetComponent<LinePlayer>();
-        if (player == null)
-            Debug.LogError("Player Null!");
+        direction = Vector3.down;
     }
 
 
@@ -27,24 +25,24 @@ public class PlayerInput : MonoBehaviour
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-           
-            player.OnTurnUp();
+
+            direction = Vector3.up;
         }
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            player.OnTurnDown();
+            direction = Vector3.down;
         }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            player.OnTurnLeft();
+            direction = Vector3.left;
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             //PlayerController.Instance.mainPlayer.OnTurnRight();
-            player.OnTurnRight();
+            direction = Vector3.right;
         }
 #endif
 
@@ -96,13 +94,16 @@ public class PlayerInput : MonoBehaviour
                                 {
                                     // MOVE RIGHT      
                                     Debug.Log("Player move right");
-                                    player.OnTurnRight();
+                                    //player.OnTurnRight();
+                                    direction = Vector3.right;
+
                                 }
                                 else
                                 {
                                     // MOVE LEFT
                                     Debug.Log("Player move left");
-                                    player.OnTurnLeft();
+                                    //player.OnTurnLeft();
+                                    direction = Vector3.left;
                                 }
                             }
 
@@ -112,13 +113,15 @@ public class PlayerInput : MonoBehaviour
                                 {
                                     // MOVE UP
                                     Debug.Log("Player move up");
-                                    player.OnTurnUp();
+                                    //player.OnTurnUp();
+                                    direction = Vector3.up;
                                 }
                                 else
                                 {
                                     // MOVE DOWN
                                     Debug.Log("Player move down");
-                                    player.OnTurnDown();
+                                    //player.OnTurnDown();
+                                    direction = Vector3.down;
                                 }
                             }
 
@@ -126,8 +129,8 @@ public class PlayerInput : MonoBehaviour
 
                         break;
                 }
-            }
+            }         
         }
-
+        this.transform.Translate(direction * speed * Time.deltaTime);
     }
 }

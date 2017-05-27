@@ -26,5 +26,4 @@ public class FadeIn: BaseEffect
         rdr.color = Color.white;
         base.End();
     }
-
 }

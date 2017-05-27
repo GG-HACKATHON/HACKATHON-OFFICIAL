@@ -25,8 +25,6 @@ public class FadeOut : BaseEffect
         }
         //rdr = (SpriteRenderer)CopyComponent(rdr, this.gameObject);
         
-
-
         //scaleOriginal = target.transform.localScale;
 
         fadeIndex = Color.white;
