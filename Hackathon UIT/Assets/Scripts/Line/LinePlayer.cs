@@ -88,27 +88,27 @@ public class LinePlayer : MonoBehaviour {
 
     protected virtual void Update()
     {
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            OnTurnDown();
-        }
-        else if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            OnTurnUp();
-        }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            OnTurnLeft();
-        }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            OnTurnRight();
-        }
-        else if (Input.GetKeyDown(KeyCode.A))
-        {
-            if (distance * (bodies.Count) < recorder.Count)
-                AddBody(ComradeType.HIPPO, bodies.Count);
-        }
+        //if (Input.GetKeyDown(KeyCode.DownArrow))
+        //{
+        //    OnTurnDown();
+        //}
+        //else if (Input.GetKeyDown(KeyCode.UpArrow))
+        //{
+        //    OnTurnUp();
+        //}
+        //else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        //{
+        //    OnTurnLeft();
+        //}
+        //else if (Input.GetKeyDown(KeyCode.RightArrow))
+        //{
+        //    OnTurnRight();
+        //}
+        //else if (Input.GetKeyDown(KeyCode.A))
+        //{
+        //    if (distance * (bodies.Count) < recorder.Count)
+        //        AddBody(ComradeType.HIPPO, bodies.Count);
+        //}
     }
 
     public virtual void OnTurnLeft() 

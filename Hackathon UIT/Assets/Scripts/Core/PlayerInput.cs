@@ -17,7 +17,7 @@ public class PlayerInput : MonoBehaviour
     {
         player = GetComponent<LinePlayer>();
         if (player == null)
-            Debug.LogError("Player Null!");
+            Debug.LogError("Player Null Exception!");
     }
 
 
@@ -27,7 +27,6 @@ public class PlayerInput : MonoBehaviour
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-           
             player.OnTurnUp();
         }
 
