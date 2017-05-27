@@ -38,9 +38,11 @@ public class EffectManager : MonoSingleton<EffectManager>
 
     public void ApplyEffect(TYPE_FX type, GameObject target)
     {
+        Debug.Log((int)type);
         temp = Instantiate(prefabs[(int)type]) as GameObject;
-
+        Debug.Log(temp);
         temp.GetComponent<BaseEffect>().Init(target);
+       
     }
 
     public TYPE_FX typeTest;

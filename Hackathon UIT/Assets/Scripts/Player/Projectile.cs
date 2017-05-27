@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour {
 
     public float dame;
 
+    [HideInInspector]
     public Vector3 targetPosition;
 
     public float speed;

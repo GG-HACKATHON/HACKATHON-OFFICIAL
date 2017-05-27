@@ -32,13 +32,11 @@ public class BoomProjectile : Projectile {
     {
         if (target.tag == "Enemy")
         {
-            //Destroy(gameObject);
             movable = false;
             anim.SetBool("isExploisive", true);
             Vector3 scale = new Vector3(4.5f, 4.5f, 4.5f);
             gameObject.transform.localScale = scale;
             target.GetComponent<BaseObject>().OnHit(dame);
-
         }
     }
 }
