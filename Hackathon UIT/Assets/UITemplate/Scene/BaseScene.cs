@@ -8,6 +8,10 @@ public class BaseScene : MonoBehaviour
     public int index;
     private object data;
 
+    public void Start()
+    {
+        DialogManager.Instance.ShowDialog<DialogGameStart>("Prefabs/UI/GameStart");
+    }
     public virtual void OnShow(object data)
     {
         this.data = data;
