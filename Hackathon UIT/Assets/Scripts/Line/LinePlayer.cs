@@ -31,6 +31,8 @@ public class LinePlayer : MonoBehaviour {
 
     protected List<GameObject> bodies = new List<GameObject>();
 
+    protected float invincibleTime = 0f;
+
     protected virtual void Start()
     {
         CreateLeader();
@@ -81,6 +83,18 @@ public class LinePlayer : MonoBehaviour {
         for (int i = 0; i < follower.Count; i++)
         {
             AddBody(follower[i], bodies.Count);
+        }
+    }
+
+    protected virtual void FixedUpdate()
+    {
+        if (invincibleTime > 0f)
+        {
+            invincibleTime -= Time.fixedDeltaTime;
+            if (invincibleTime <= 0f)
+            {
+
+            }
         }
     }
 
@@ -180,4 +194,10 @@ public class LinePlayer : MonoBehaviour {
             b.GetComponent<BaseBody>().AddHP(hp);
         }
     }
+
+    public void SetInvincible(float time)
+    {
+        leader.SetInvincible(time);
+    }
+    
 }

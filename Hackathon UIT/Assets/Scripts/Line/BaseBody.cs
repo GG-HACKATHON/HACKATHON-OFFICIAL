@@ -24,7 +24,7 @@ public class BaseBody : MonoBehaviour {
     private Action Move;
     private int pos;
     private float speed = 1f;
-
+    private float invincibleTime = 0f;
 
     [HideInInspector]
     public List<PathRecorder> recorder;
@@ -44,6 +44,9 @@ public class BaseBody : MonoBehaviour {
         {
             recorder.Add(new PathRecorder(transform.position, dir));
         }
+
+        if (invincibleTime > 0f)
+            invincibleTime -= Time.fixedDeltaTime;
 
         Move();
         SetAnimation(dir);
@@ -147,21 +150,24 @@ public class BaseBody : MonoBehaviour {
 
     public virtual void OnHit(float dame)
     {
-        curHealth -= dame;
-        if (curHealth <= 0)
+        if (CheckInvincible())
         {
-            //Quan test:
-            EffectManager.Instance.Spawn(TYPE_FX.Collision, this.transform.position);
-           
-            OnDie();
+            curHealth -= dame;
+            if (curHealth <= 0)
+            {
+                //Quan test:
+                EffectManager.Instance.Spawn(TYPE_FX.Collision, this.transform.position);
+
+                OnDie();
+            }
+
+            float ratio = curHealth / health;
+
+            Vector3 scale = defaultScale;
+            scale.x *= ratio;
+
+            hp.transform.localScale = scale;
         }
-
-        float ratio = curHealth / health;
-
-        Vector3 scale = defaultScale;
-        scale.x *= ratio;
-
-        hp.transform.localScale = scale;
     }
 
     public virtual void OnHit(BaseBody target, float dame)
@@ -265,5 +271,22 @@ public class BaseBody : MonoBehaviour {
         scale.x *= ratio;
 
         this.hp.transform.localScale = scale;
+    }
+    
+    public void SetInvincible(float time)
+    {
+        invincibleTime = time;
+    }
+
+    public bool CheckInvincible()
+    {
+        if (invincibleTime > 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
