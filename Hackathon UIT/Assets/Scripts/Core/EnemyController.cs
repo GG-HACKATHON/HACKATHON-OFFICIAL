@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum EnemyType {
-    HOOLITOR, FUNNYBOY, BOSS
+    HOOLITOR, FUNNYBOY, BOSS, BOOK
 }
 
 
