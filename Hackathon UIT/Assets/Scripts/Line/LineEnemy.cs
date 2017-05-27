@@ -3,19 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PathRecorder
-{
-    public Vector3 position;
-    public Direction direction;
-
-    public PathRecorder(Vector3 position, Direction direction)
-    {
-        this.position = position;
-        this.direction = direction;
-    }
-}
-
-public class LinePlayer : MonoBehaviour {
+public class LineEnemy : LinePlayer {
 
     public CameraController cameraController;
     public ComradeType leaderType;
@@ -62,7 +50,9 @@ public class LinePlayer : MonoBehaviour {
 
             leader.SetSpeed(speed);
         }
+
         bodies.Add(go);
+
     }
 
     protected virtual void CreateFollower() //ERR
@@ -86,30 +76,30 @@ public class LinePlayer : MonoBehaviour {
 
     protected virtual void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.DownArrow))
-        //{
-        //    OnTurnDown();
-        //}
-        //else if (Input.GetKeyDown(KeyCode.UpArrow))
-        //{
-        //    OnTurnUp();
-        //}
-        //else if (Input.GetKeyDown(KeyCode.LeftArrow))
-        //{
-        //    OnTurnLeft();
-        //}
-        //else if (Input.GetKeyDown(KeyCode.RightArrow))
-        //{
-        //    OnTurnRight();
-        //}
-        //else if (Input.GetKeyDown(KeyCode.A))
-        //{
-        //    if (distance * (bodies.Count) < recorder.Count)
-        //        AddBody(ComradeType.HIPPO, bodies.Count);
-        //}
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            OnTurnDown();
+        }
+        else if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            OnTurnUp();
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            OnTurnLeft();
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            OnTurnRight();
+        }
+        else if (Input.GetKeyDown(KeyCode.A))
+        {
+            if (distance * (bodies.Count) < recorder.Count)
+                AddBody(ComradeType.HIPPO, bodies.Count);
+        }
     }
 
-    public virtual void OnTurnLeft() 
+    public virtual void OnTurnLeft()
     {
         leader.Turn(Direction.LEFT);
     }
@@ -134,7 +124,8 @@ public class LinePlayer : MonoBehaviour {
         Vector3 pos = new Vector3(100, 100);
         GameObject body = (GameObject)Instantiate(ComradeManager.Instance.GetObjectByType(type), pos, Quaternion.identity, transform);
         BaseBody baseBody = body.GetComponent<BaseBody>();
-        try {
+        try
+        {
             baseBody.recorder = recorder; // Đã sửa ở đây
             baseBody.SetNumber(number, distance);
             baseBody.Turn(Direction.FOLLOW);

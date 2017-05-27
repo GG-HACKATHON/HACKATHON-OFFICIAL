@@ -14,7 +14,10 @@ public class BaseBody : MonoBehaviour {
 
     public Direction dir;
     public bool leader;
+    public GameObject hp;
+    public float health;
 
+    protected float curHealth;
     protected Animator anim;
     private delegate void Action();
     private Action Move;
@@ -126,8 +129,25 @@ public class BaseBody : MonoBehaviour {
         pos++;
     }
 
-    public virtual void OnHit(float damge)
-    { }
+    public virtual void OnHit(float dame)
+    {
+        curHealth -= dame;
+        if (curHealth <= 0)
+        {
+            //EffectManager.Instance.ApplyEffect(TYPE_FX.Collision, this.gameObject);
+            Destroy(this.gameObject);
+        }
+        float ratio = curHealth / health;
+
+        Vector3 scale = new Vector3(ratio, 1, 1);
+
+        hp.transform.localScale = scale;
+    }
+
+    public virtual void OnHit(BaseObject target, float dame)
+    {
+        target.health -= dame;
+    }
 
     public virtual void OnHitLine(int index)
     {

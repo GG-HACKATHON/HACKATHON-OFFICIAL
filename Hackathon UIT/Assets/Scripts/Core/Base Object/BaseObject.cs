@@ -5,12 +5,8 @@ using UnityEngine;
 public class BaseObject : MonoBehaviour
 {
     public GameObject hp;
-
-
     public float health;
-
     protected float curHealth;
-
     protected Animator anim;
 
     public virtual void Init()
