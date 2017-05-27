@@ -146,8 +146,10 @@ public class EnemyBaseBody : MonoBehaviour {
     {
         transform.position = recorder[pos].position;
         dir = recorder[pos].direction;
-        pos++;
+        pos += change;
     }
+
+    int change = 2;
 
     public virtual void OnHit(float dame)
     {

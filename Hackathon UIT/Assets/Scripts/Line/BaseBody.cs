@@ -29,10 +29,12 @@ public class BaseBody : MonoBehaviour {
     [HideInInspector]
     public List<PathRecorder> recorder;
     [HideInInspector]
+    public List<PathRecorder> slowRecorder = new List<PathRecorder>();
+    [HideInInspector]
     public int number;
     [HideInInspector]
     public LinePlayer linePlayer;
-
+    
     protected void Start()
     {
         Init();
@@ -45,7 +47,6 @@ public class BaseBody : MonoBehaviour {
             recorder.Add(new PathRecorder(transform.position, dir));
         }
 
-        
         if (invincibleTime > 0f)
             invincibleTime -= Time.fixedDeltaTime;
 
@@ -119,26 +120,27 @@ public class BaseBody : MonoBehaviour {
     public virtual void TurnLeft()
     {
         this.dir = Direction.LEFT;
-        transform.position += Vector3.left * speed * Time.deltaTime;
+        transform.position += Vector3.left * speed * Time.fixedDeltaTime;
     }
 
     public virtual void TurnRight()
-    {
+    { 
         this.dir = Direction.RIGHT;
-        transform.position += Vector3.right * speed * Time.deltaTime;
+        transform.position += Vector3.right * speed * Time.fixedDeltaTime;
     }
 
     public virtual void TurnUp()
     {
         this.dir = Direction.UP;
-        transform.position += Vector3.up * speed * Time.deltaTime;
+        transform.position += Vector3.up * speed * Time.fixedDeltaTime;
     }
 
     public virtual void TurnDown()
     {
         this.dir = Direction.DOWN;
-        transform.position += Vector3.down * speed * Time.deltaTime;
+        transform.position += Vector3.down * speed * Time.fixedDeltaTime;
     }
+    
 
     public virtual void Follow()
     {
@@ -158,7 +160,6 @@ public class BaseBody : MonoBehaviour {
             {
                 //Quan test:
                 EffectManager.Instance.Spawn(TYPE_FX.Collision, this.transform.position);
-
                 OnDie();
             }
 
@@ -189,6 +190,10 @@ public class BaseBody : MonoBehaviour {
         if (leader)
         {
             linePlayer.OnDie();
+        }
+        else
+        {
+            linePlayer.RemoveBody(number);
         }
     }
 
@@ -289,5 +294,22 @@ public class BaseBody : MonoBehaviour {
         {
             return false;
         }
+    }
+
+    public void Slow(int number, int space)
+    {
+        if (leader)
+        {
+            speed = speed / 2;
+        }
+        else
+        {
+            SetNumber(number, space * 2);
+        }
+    }
+
+    public void Slow()
+    {
+        speed = speed / 2;
     }
 }

@@ -43,7 +43,7 @@ public class LinePlayer : MonoBehaviour {
     {
         GameObject go = (GameObject)Instantiate(ComradeManager.Instance.GetObjectByType(leaderType), transform);
         leader = go.GetComponent<BaseBody>();
-
+       
         if (leader != null) // Nếu BaseBody tồn tại
         {
             // Cho camera di theo leader
@@ -52,15 +52,25 @@ public class LinePlayer : MonoBehaviour {
             // Tạo recorder để lưu vị trí
             recorder = new List<PathRecorder>();
 
+            Vector3 offset = Vector3.down* speed *Time.fixedDeltaTime;
+            for (int i = 0; i < bodies.Count * distance; i++)
+            {
+                recorder.Add(new PathRecorder(leader.transform.position - i * offset, Direction.DOWN));
+            }
+
             // Gán recorder của linePlayer cho leader
             leader.recorder = recorder;
 
             // Cho thằng này làm leader
             leader.leader = true;
 
+            leader.dir = Direction.DOWN;
+
             // gán this vào linePlayer của leader dùng để check đụng hàng
             leader.linePlayer = this;
             leader.gameObject.AddComponent<LeaderTrigger>();
+
+            
 
             leader.SetSpeed(speed);
         }
@@ -88,14 +98,7 @@ public class LinePlayer : MonoBehaviour {
 
     protected virtual void FixedUpdate()
     {
-        if (invincibleTime > 0f)
-        {
-            invincibleTime -= Time.fixedDeltaTime;
-            if (invincibleTime <= 0f)
-            {
-
-            }
-        }
+    
     }
 
     protected virtual void Update()
@@ -149,6 +152,7 @@ public class LinePlayer : MonoBehaviour {
         GameObject body = (GameObject)Instantiate(ComradeManager.Instance.GetObjectByType(type), pos, Quaternion.identity, transform);
         BaseBody baseBody = body.GetComponent<BaseBody>();
         try {
+            baseBody.linePlayer = this;
             baseBody.recorder = recorder; // Đã sửa ở đây
             baseBody.SetNumber(number, distance);
             baseBody.Turn(Direction.FOLLOW);
@@ -198,6 +202,22 @@ public class LinePlayer : MonoBehaviour {
     public void SetInvincible(float time)
     {
         leader.SetInvincible(time);
+    }
+
+    [ContextMenu("Slow")]
+    public void Slow()
+    {
+        //for (int i = 1; i < bodies.Count * distance; i++)
+        //{
+        //    recorder[i].position = recorder[i + distance].position;
+        //    recorder[i].direction = recorder[i + distance].direction;
+        //}
+
+        //for (int i = 0; i < bodies.Count; i++)
+        //{
+        //    bodies[i].GetComponent<BaseBody>().Slow(i, distance);
+        //}
+        //leader.Slow();
     }
     
 }
