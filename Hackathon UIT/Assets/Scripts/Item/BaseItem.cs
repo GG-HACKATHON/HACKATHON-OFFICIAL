@@ -23,8 +23,6 @@ public class BaseItem : MonoBehaviour
     {
         if(target.tag == "Player")
         {
-            Debug.Log("Contact!");
-
             OnDie();
             Destroy(gameObject);
         }

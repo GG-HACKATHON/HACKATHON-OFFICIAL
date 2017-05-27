@@ -1,13 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class ItemSpawn : BaseItem {
+
+
 
     LinePlayer linePlayer;
 
     void Awake()
     {
+       
+
+           
         linePlayer = FindObjectOfType<LinePlayer>();
     }
 
@@ -29,6 +35,7 @@ public class ItemSpawn : BaseItem {
 
     protected override void OnDie()
     {
-        linePlayer.AddBody(ComradeType.PANDA, linePlayer.GetBodyCount());
+        linePlayer.AddBody((ComradeType)UnityEngine.Random.Range(0, Enum.GetNames(typeof(ComradeType)).Length)
+            , linePlayer.GetBodyCount());
     }
 }

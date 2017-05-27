@@ -45,6 +45,7 @@ public class BaseBody : MonoBehaviour {
             recorder.Add(new PathRecorder(transform.position, dir));
         }
 
+        
         if (invincibleTime > 0f)
             invincibleTime -= Time.fixedDeltaTime;
 
@@ -150,7 +151,7 @@ public class BaseBody : MonoBehaviour {
 
     public virtual void OnHit(float dame)
     {
-        if (CheckInvincible())
+        if (!CheckInvincible())
         {
             curHealth -= dame;
             if (curHealth <= 0)
