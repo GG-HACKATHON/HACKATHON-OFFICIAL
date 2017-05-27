@@ -42,6 +42,9 @@ public class BaseBody : MonoBehaviour {
 
     protected void FixedUpdate()
     {
+        if (!GameController.Instance.isRun)
+            return;
+
         if (leader)
         {
             recorder.Add(new PathRecorder(transform.position, dir));

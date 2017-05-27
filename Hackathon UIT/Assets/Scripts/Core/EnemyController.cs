@@ -55,6 +55,10 @@ public class EnemyController : MonoBehaviour {
 
     protected void FixedUpdate()
     {
+        // game không chạy thì không vận hành
+        if (!GameController.Instance.isRun)
+            return;
+
         if (transform.childCount < maxEnemy)
         {
             elapsedTimeSpawn += Time.fixedDeltaTime;
