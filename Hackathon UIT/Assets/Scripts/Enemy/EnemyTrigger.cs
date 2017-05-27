@@ -28,7 +28,7 @@ public class EnemyTrigger : MonoBehaviour {
             //Quan test:
             EffectManager.Instance.Spawn(TYPE_FX.Collision, this.transform.position);
 
-            ItemManager.Instance.Spawn((ItemType)(Random.Range(0, 2)), transform.position);
+            ItemManager.Instance.Spawn((ItemType)(Random.Range(0, 4)), transform.position);
       
             Destroy(this.gameObject);
         }
