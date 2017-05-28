@@ -17,6 +17,7 @@ public class ItemSpawn : BaseItem {
         typePlayer = (ComradeType)UnityEngine.Random.Range(1, Enum.GetNames(typeof(ComradeType)).Length);
         //typePlayer = (ComradeType)(UnityEngine.Random.Range(0, 2));
 
+
         GetComponent<SpriteRenderer>().sprite = sprites[1];
 
         linePlayer = FindObjectOfType<LinePlayer>();

@@ -10,7 +10,7 @@ public class DialogGameOver : BaseDialog {
 
     public void Start()
     {
-        scoreResult.text = score;
+        scoreResult.text = Game.Instance.score.ToString() ;
     }
     public void onClickReplay()
     {

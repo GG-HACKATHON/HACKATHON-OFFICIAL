@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum EnemyType {
-    HOOLITOR, FUNNYBOY, BOSS, BOOK
+    HOOLITOR, FUNNYBOY, BOSS
 }
 
 
@@ -18,7 +18,6 @@ public class EnemyController : MonoBehaviour {
 
     Dictionary<EnemyType, GameObject> dict = new Dictionary<EnemyType, GameObject>();
     public List<EnemyProperty> enemies;
-
     void MakeDictionary()
     {
         foreach (EnemyProperty ep in enemies)
@@ -29,7 +28,6 @@ public class EnemyController : MonoBehaviour {
             }
         }
     }
-
     void Awake()
     {
         MakeDictionary();
@@ -86,6 +84,11 @@ public class EnemyController : MonoBehaviour {
                 GameObject enemy = (GameObject)Instantiate(GetEnemyByType(type), pos, Quaternion.identity, transform);
                 AIMovement component = enemy.GetComponent<AIMovement>();
                 component.direction = dir;
+                EnemyTrigger trigger = enemy.GetComponent<EnemyTrigger>();
+                if(trigger != null)
+                {
+                    trigger.SetHp(GameController.Instance.ratio);
+                }
                 break;
             }
             count--;

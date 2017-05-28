@@ -19,7 +19,10 @@ public class EnemyTrigger : MonoBehaviour {
 	void Update () {
 		
 	}
-
+    public void SetHp(float ratio)
+    {
+        this.health = this.health + this.health * ratio;
+    }
     public void OnHit(float dame)
     {
         curHealth -= dame;
@@ -29,7 +32,7 @@ public class EnemyTrigger : MonoBehaviour {
             EffectManager.Instance.Spawn(TYPE_FX.Collision, this.transform.position);
 
             ItemManager.Instance.Spawn((ItemType)(Random.Range(0, 4)), transform.position);
-      
+            GameController.Instance.AddLevel();
             Destroy(this.gameObject);
         }
         float ratio = curHealth / health;

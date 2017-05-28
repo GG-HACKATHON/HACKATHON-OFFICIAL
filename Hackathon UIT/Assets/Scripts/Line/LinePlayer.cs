@@ -166,7 +166,7 @@ public class LinePlayer : MonoBehaviour {
             }
             bodies.Add(body);
         }
-       
+        
     }
 
     public virtual void RemoveBody(int index)
